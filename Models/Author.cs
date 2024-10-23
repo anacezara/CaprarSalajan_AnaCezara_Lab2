@@ -1,4 +1,6 @@
-﻿namespace CaprarSalajan_AnaCezara_Lab2.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CaprarSalajan_AnaCezara_Lab2.Models
 {
     public class Author
     {
@@ -7,6 +9,7 @@
         public string LastName { get; set; }
         public ICollection<Book>? Books { get; set; }
 
+        [Display(Name = "Author")]
         public string AuthorFullName
         {
             get { return FirstName + " " + LastName; }
