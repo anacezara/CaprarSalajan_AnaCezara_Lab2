@@ -9,7 +9,7 @@ namespace CaprarSalajan_AnaCezara_Lab2.Models
         public string LastName { get; set; }
         public ICollection<Book>? Books { get; set; }
 
-        [Display(Name = "Author")]
+        [Display(Name = "Author Full Name")]
         public string AuthorFullName
         {
             get { return FirstName + " " + LastName; }
